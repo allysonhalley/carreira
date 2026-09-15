@@ -1,4 +1,6 @@
-% !TEX TS-program = luatex
+﻿
+import codecs
+content = r'''% !TEX TS-program = luatex
 % USA STEM CV LaTeX Template
 %
 % Author:
@@ -44,3 +46,7 @@
 
 
 \end{document}
+'''
+with codecs.open('cv.tex', 'w', encoding='utf-8') as f:
+    f.write(content)
+
